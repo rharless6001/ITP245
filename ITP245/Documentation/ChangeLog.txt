@@ -1,0 +1,8 @@
+﻿Regina Harless ITP 245
+Nov. 04, 2020
+Intial Setup
+
+Nov. 8th 2020 
+Inventory and School Area added
+Inventory and School Links connected to Nav Bar.
+All Links are in working order.
