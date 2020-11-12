@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Inventory Examples";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-inf " id="navbarColor01">
+    <ul class="nav navbar-nav navbar-link navbar-static-top">
+        <li>@Html.ActionLink("Inventory Home", "Index", "Inventory", new { area = "Inventory" }, null)</li>
+        <li>@Html.ActionLink("Items", "Index", "Items", new { area = "Inventory" }, null)</li>
+        <li>@Html.ActionLink("Purchase Orders", "Index", "Purchase Orders", new { area = "Inventory" }, null)</li>
+        <li>@Html.ActionLink("Vendors", "Index", "Vendors", new { area = "Inventory" }, null)</li>
+    </ul>
+</nav>
+
+<div class="container body-content">
+    @RenderBody()
+    <hr />
+</div>

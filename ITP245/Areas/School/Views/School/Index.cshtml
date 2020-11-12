@@ -1,8 +1,52 @@
 ﻿
 @{
     ViewBag.Title = "School Home Page";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Areas/School/Views/Shared/_School.cshtml";
 }
 
 <h2>@ViewBag.Title</h2>
 
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="text text-info">Facilities</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            @Html.ActionLink(HttpUtility.HtmlDecode("&laquo; Campuses &raquo;"), "Index", "Campus", null, new { @class = "btn btn-info" })
+            @Html.ActionLink(HttpUtility.HtmlDecode("&laquo; Buildings &raquo;"), "Index", "Buildings", null, new { @class = "btn btn-info" })
+            @Html.ActionLink(HttpUtility.HtmlDecode("&laquo; Classrooms &raquo;"), "Index", "Classrooms", null, new { @class = "btn btn-info" })
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="text text-primary">Schedule</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            @Html.ActionLink(HttpUtility.HtmlDecode("&laquo; Courses &raquo;"), "Index", "Courses", null, new { @class = "btn btn-primary" })
+            @Html.ActionLink(HttpUtility.HtmlDecode("&laquo; Scheduling &raquo;"), "Index", "Scheduling", null, new { @class = "btn btn-primary" })
+            @Html.ActionLink(HttpUtility.HtmlDecode("&laquo; Students &raquo;"), "Index", "Students", null, new { @class = "btn btn-primary" })
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="text text-danger">Administration</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            @Html.ActionLink(HttpUtility.HtmlDecode("&laquo; Semester &raquo;"), "Index", "Semester", null, new { @class = "btn btn-danger" })
+            @Html.ActionLink(HttpUtility.HtmlDecode("&laquo; Departments &raquo;"), "Index", "Departments", null, new { @class = "btn btn-danger" })
+            @Html.ActionLink(HttpUtility.HtmlDecode("&laquo; Instructors &raquo;"), "Index", "Instuctors", null, new { @class = "btn btn-danger" })
+
+        </div>
+    </div>
+</div>

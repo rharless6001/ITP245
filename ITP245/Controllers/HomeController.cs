@@ -22,7 +22,7 @@ namespace ITP245.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Regina's Contact Information";
 
             return View();
         }
